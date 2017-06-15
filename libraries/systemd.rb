@@ -454,6 +454,10 @@ module Systemd
     OPTIONS ||= {
       'DNS' => { kind_of: [String, Array] },
       'FallbackDNS' => { kind_of: [String, Array] },
+      'DNSStubListener' => { 
+        kind_of: [String],
+        equal_to: ['udp', 'tcp', 'yes', 'no']
+      },
       'LLMNR' => {
         kind_of: [TrueClass, FalseClass, String],
         equal_to: [true, false, 'resolve']

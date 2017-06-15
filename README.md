@@ -779,6 +779,7 @@ Resource for configuring [systemd-resolved][resolved]
 |---------|-----------|-------|
 |dns|see docs|nil|
 |fallback_dns|see docs|nil|
+|dns_stub_listener|see docs|nil|
 |llmnr|see docs|nil|
 
 Example usage:

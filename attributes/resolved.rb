@@ -20,5 +20,6 @@
 default['systemd']['resolved'].tap do |r|
   r['dns'] = %w( 8.8.8.8 8.8.4.4 )
   r['fallback_dns'] = %w( 208.67.222.222 208.67.220.220 )
+  r['dns_stub_listener'] = nil
   r['llmnr'] = nil
 end
